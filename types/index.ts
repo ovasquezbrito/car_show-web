@@ -4,8 +4,11 @@ import { MouseEventHandler } from "react";
 export interface CustomButtonProps {
   title: string;
   containerStyles?: string;
+  textStyles?: string;
+  rightIcon?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   btnType?: "button" | "submit";
+  isDisabled?: boolean;
 }
 
 export interface SearchManufacturerProps {
@@ -17,17 +20,17 @@ export interface CustomFilterProps {
   title: string;
 }
 
-export interface CarCardProps {
-  city_mpg: 23;
-  class: "compact car";
-  combination_mpg: 24;
-  cylinders: 4;
-  displacement: 1.6;
-  drive: "fwd";
-  fuel_type: "gas";
-  highway_mpg: 26;
-  make: "toyota";
-  model: "corolla";
-  transmission: "a";
-  year: 1993;
+export interface CarProps {
+  city_mpg: number;
+  class: string;
+  combination_mpg: number;
+  cylinders: number;
+  displacement: number;
+  drive: string;
+  fuel_type: string;
+  highway_mpg: number;
+  make: string;
+  model: string;
+  transmission: string;
+  year: number;
 }
